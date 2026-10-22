@@ -1,0 +1,7 @@
+# 敏感：绝不入库
+credentials.txt
+data/
+config.json
+
+# 构建产物
+upload-channel
