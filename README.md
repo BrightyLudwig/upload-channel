@@ -14,8 +14,8 @@ Zipline 三条满足、中文界面这条满足不了——Zipline v4 没有做�
 
 | 项目 | 值 |
 |---|---|
-| 选手端 | http://121.43.195.133:27107 → 容器 3000（只有上传路由，`/admin` 是 404） |
-| 主办方端 | http://121.43.195.133:29615 → 容器 3001（只有管理路由，独立密钥登录） |
+| 选手端 | http://<服务器IP>:27107 → 容器 3000（只有上传路由，`/admin` 是 404） |
+| 主办方端 | http://<服务器IP>:29615 → 容器 3001（只有管理路由，独立密钥登录） |
 | 容器 | `upload-channel`（alpine + 静态二进制，镜像 `upload-channel:latest`） |
 | 数据 | `/home/claude/upload-channel/data/uploads/<组号>/`（15 个目录，文件名即原始文件名） |
 | 配置 | `/home/claude/upload-channel/data/config.json`（600 权限：密钥 + 会话签名密钥 + 配额 + `admin_key`） |
